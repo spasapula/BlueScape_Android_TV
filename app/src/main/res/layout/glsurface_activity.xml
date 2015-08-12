@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CustomGLView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/glSurfaceRL"
+    android:elevation="2dp"
+    android:background="@android:color/white">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/main_toolbar" />
+
+
+    <View
+        android:layout_marginLeft="-56dp"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/refView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <com.bluescape.view.CustomGLView
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/gl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        CustomGLView:color_bg="@android:color/black"
+        CustomGLView:color_shape="@android:color/holo_red_dark" />
+
+
+</RelativeLayout>

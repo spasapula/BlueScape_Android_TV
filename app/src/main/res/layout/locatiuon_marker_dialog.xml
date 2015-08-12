@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/mainDialogMainLL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/leftLL"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@+id/topLL"
+                    android:layout_above="@+id/mainDialogLL"
+                    android:layout_width="320dp"
+                    android:layout_height="match_parent"></LinearLayout>
+
+                <ImageView
+                    android:layout_marginBottom="-16dp"
+                    android:layout_above="@+id/workspaceMarker"
+                    android:id="@+id/downArrow"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/black_down_arrow"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp" />
+
+                <LinearLayout
+                    android:layout_marginBottom="-20dp"
+                    android:layout_above="@+id/downArrow"
+                    android:id="@+id/mainDialogLL"
+                    android:background="@drawable/rounded_corners"
+                    android:orientation="vertical"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+
+                        <TextView
+                            android:layout_centerInParent="true"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:text="Create Marker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/cancelMarkerCreation"
+                            android:paddingRight="10dp"
+                            android:paddingLeft="16dp"
+                            android:layout_centerVertical="true"
+                            android:textColor="#0000ff"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:text="Cancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+                    </RelativeLayout>
+
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp" />
+
+                    <EditText
+                        android:textColor="#000000"
+                        android:inputType="textCapWords"
+                        android:singleLine="true"
+                        android:id="@+id/markerName"
+                        android:paddingLeft="16dp"
+                        android:hint="Name"
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp" />
+
+                    <TextView
+                        android:id="@+id/createMarker"
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        android:gravity="center"
+                        android:text="Create"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/workspaceMarker"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/workspace_marker_red"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@+id/bottomLL"
+                    android:layout_below="@+id/workspaceMarker"
+                    android:layout_width="320dp"
+                    android:layout_height="match_parent"></LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/rightLL"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</LinearLayout>

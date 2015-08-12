@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/mainDialogMainLL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/topLL"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"></LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/dialogArea"
+        android:layout_below="@+id/topLL"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/leftLL"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/topArrow"
+                android:background="@drawable/top"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="-25dp" />
+
+            <RelativeLayout
+                android:layout_below="@+id/topArrow"
+                android:layout_toRightOf="@+id/leftMainDialogLL"
+                android:id="@+id/mainDialogLL"
+                android:padding="16dp"
+                android:background="@drawable/rounded_corners"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/infoText"
+                    android:textColor="#000000"
+                    android:text="Please enter the PIN code\n displayed on your wall's\n welcome screen."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:layout_below="@+id/infoText"
+                    android:paddingLeft="16dp"
+                    android:inputType="number"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="4dp"
+                    android:background="@drawable/round_edittext"
+                    android:singleLine="true"
+                    android:id="@+id/pin"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp" />
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_below="@+id/pin"
+                    android:id="@+id/sendToWallText"
+                    android:textColor="#cdcdcd"
+                    android:textSize="18sp"
+                    android:layout_centerHorizontal="true"
+                    android:text="Send to wall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/bottomLL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rightLL"
+            android:orientation="horizontal"
+            android:layout_width="150dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+</RelativeLayout>

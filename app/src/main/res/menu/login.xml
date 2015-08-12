@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/acceptance"
+        android:title="@string/acceptance"
+       />
+    
+    <item
+        android:id="@+id/staging"
+        android:title="@string/staging"
+        />
+
+    <item
+        android:id="@+id/production"
+        android:title="@string/production"
+       />
+
+    <item
+        android:id="@+id/instance2"
+        android:title="@string/instance2"
+        />
+
+</menu>

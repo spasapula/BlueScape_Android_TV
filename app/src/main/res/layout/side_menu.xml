@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:elevation="2dp"
+            android:id="@+id/sideOptRL"
+            android:background="#2e2f34"
+            android:layout_width="85dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/connectedUsersIV"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="fill_parent"
+                android:layout_height="85dp" />
+
+            <ImageView
+                android:id="@+id/locationMarkersIV"
+                android:layout_below="@+id/connectedUsersIV"
+                android:layout_centerHorizontal="true"
+                android:layout_width="fill_parent"
+                android:layout_height="85dp" />
+
+
+            <ImageView
+                android:id="@+id/exitWorkspaceIv"
+                android:background="@drawable/exit_selector"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="85dp" />
+
+        </RelativeLayout>
+
+        <View
+            android:background="#000000"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/sideListLL"
+            android:background="#e0e0e0"
+            android:orientation="vertical"
+            android:layout_width="250dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:elevation="2dp"
+                android:id="@+id/selectedListTv"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="#c9c9c9"
+                android:layout_width="match_parent"
+                android:layout_height="64dp" />
+
+            <TextView
+                android:paddingLeft="16dp"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/add_marker"
+                android:textSize="18sp"
+                android:visibility="gone"
+                android:id="@+id/addNewMarker"
+                android:text="   Add New Marker"
+                android:background="#efefef"
+                android:layout_width="match_parent"
+                android:layout_height="56dp" />
+
+            <View
+                android:id="@+id/markerLine"
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <ListView
+                android:dividerHeight="1dp"
+                android:layout_marginLeft="8dp"
+                android:background="#e0e0e0"
+                android:id="@+id/collaboratorsList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ListView
+                android:dividerHeight="1dp"
+                android:layout_marginLeft="16dp"
+                android:background="#e0e0e0"
+                android:id="@+id/markersList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <View
+            android:background="#000000"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>

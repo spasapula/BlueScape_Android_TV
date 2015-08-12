@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/mainDialogMainLL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/topLL"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"></LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/dialogArea"
+        android:layout_below="@+id/topLL"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/leftLL"
+            android:orientation="horizontal"
+            android:layout_width="20dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginLeft="106dp"
+                android:id="@+id/topArrow"
+                android:background="@drawable/top"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="-25dp" />
+
+            <LinearLayout
+                android:minHeight="100dp"
+                android:layout_below="@+id/topArrow"
+                android:layout_toRightOf="@+id/leftMainDialogLL"
+                android:id="@+id/mainDialogLL"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:paddingLeft="8dp"
+                android:background="@drawable/rounded_corners"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <GridView
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:verticalSpacing="4dp"
+                    android:horizontalSpacing="4dp"
+                    android:numColumns="4"
+                    android:columnWidth="60dp"
+                    android:stretchMode="columnWidth"
+                    android:id="@+id/createCardDialogGv"
+                    android:layout_width="335dp"
+                    android:layout_height="wrap_content"></GridView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/bottomLL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+
+            android:id="@+id/rightLL"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+</RelativeLayout>

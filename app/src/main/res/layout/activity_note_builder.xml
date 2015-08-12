@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/noteToolbar"
+        layout="@layout/new_card_toolbar" />
+
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:layout_marginBottom="50dp"-->
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@+id/noteToolbar"-->
+        <!--android:layout_centerInParent="true">-->
+
+        <FrameLayout
+            android:id="@+id/frame_note_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/noteToolbar">
+
+            <ImageView
+                android:id="@+id/backgroundIV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/noteToolbar"
+                android:layout_gravity="center"
+                android:layout_margin="46dp"
+                android:background="@drawable/dotted_background"
+                android:gravity="top" />
+
+            <com.bluescape.view.CustomNoteCardView
+                android:id="@+id/CustomNoteCardView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent" />
+        </FrameLayout>
+    <!--</ScrollView>-->
+</RelativeLayout>

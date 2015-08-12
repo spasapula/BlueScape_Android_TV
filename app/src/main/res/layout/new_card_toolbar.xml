@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/action_bar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <RelativeLayout
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <LinearLayout
+            android:onClick="onClick"
+            android:id="@+id/cancelActionLL"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textColor="#0000ff"
+                android:text="Cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_marginLeft="16dp"
+            android:id="@+id/line"
+            android:layout_toRightOf="@+id/cancelActionLL"
+            android:background="#cdcdcd"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+
+        <ImageView
+            android:onClick="onClick"
+            android:id="@+id/noteAction"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/line"
+            android:layout_centerVertical="true"
+            android:src="@drawable/notecards_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:gravity="center"
+            android:text="Note Editor"
+            android:layout_toRightOf="@+id/noteAction"
+            android:layout_toLeftOf="@+id/rightLL"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/activityName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/rightLL"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:onClick="onClick"
+                android:layout_marginRight="16dp"
+                android:id="@+id/TextActionIv"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/keyboard_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_marginRight="16dp"
+                android:background="#cdcdcd"
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+
+
+            <ImageView
+                android:onClick="onClick"
+                android:layout_marginRight="16dp"
+                android:id="@+id/strokeColorActionIv"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/blue_circle"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <ImageView
+                android:onClick="onClick"
+                android:layout_marginRight="16dp"
+                android:id="@+id/strokeActionIv"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/pen_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:onClick="onClick"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/eraserActionIv"
+                android:src="@drawable/erase_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="16dp"
+                android:background="#cdcdcd"
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:onClick="onClick"
+                android:id="@+id/doneActionTLL"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginRight="8dp"
+                    android:onClick="onClick"
+                    android:id="@+id/doneActionTv"
+                    android:textSize="20sp"
+                    android:textColor="#0000ff"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="Done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

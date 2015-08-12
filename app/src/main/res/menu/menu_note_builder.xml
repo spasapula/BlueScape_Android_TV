@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      tools:context="com.bluescape.activity.NoteBuilderActivity">
+    <item
+        android:id="@+id/action_text"
+        android:icon="@drawable/keyboard_b"
+        android:title="Text"
+        app:showAsAction="always"
+        android:orderInCategory="100"/>
+    <item
+        android:id="@+id/action_stroke"
+        android:icon="@drawable/pen_b"
+        android:title="Stroke"
+        app:showAsAction="always"
+        android:orderInCategory="101"/>
+</menu>
